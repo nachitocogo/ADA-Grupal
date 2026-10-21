@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botón ADA Grupal · vista previa</title>
+  <!-- Solo para esta vista previa. Si la página de recursos ya carga estas fuentes, no hace falta repetirlo. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@500&family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 40px 16px; background: #080705; box-sizing: border-box; }
+    .vista { width: 100%; max-width: 980px; display: grid; gap: 40px; }
+    .vista p { margin: 0 0 10px; font: 500 12px/1.4 'IBM Plex Mono', monospace; letter-spacing: .12em; text-transform: uppercase; color: #7e7566; }
+  </style>
+</head>
+<body>
+<div class="vista">
+<div>
+<p>Variante 1 · tarjeta (para la grilla de recursos)</p>
+
+<!-- ═══════════ ADA GRUPAL · TARJETA · copiar desde acá ═══════════
+     Reemplazar URL_DE_ADA_GRUPAL por el link publicado de ADA Grupal.
+     Todo el CSS va con prefijo .adag- para no pisar estilos de la página. -->
+<style>
+  .adag-card { --adag-gold: #c9a227; --adag-gold-hi: #ebcb6a; --adag-cream: #f3ead6; --adag-sand: #bfb39e;
+    display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+    box-sizing: border-box; width: 100%; padding: 22px 24px; border-radius: 16px; text-decoration: none;
+    background: linear-gradient(180deg, #16130f, #0f0d0a); border: 1px solid rgba(201,162,39,.45);
+    font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif; color: var(--adag-cream);
+    transition: border-color .2s ease, transform .2s ease; }
+  .adag-card:hover { border-color: var(--adag-gold); transform: translateY(-2px); text-decoration: none; }
+  .adag-card:focus-visible { outline: 2px solid var(--adag-gold-hi); outline-offset: 3px; }
+  .adag-txt { display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1 1 280px; }
+  .adag-eyebrow { font: 500 12px/1.2 'IBM Plex Mono', 'SF Mono', Menlo, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--adag-gold); }
+  .adag-title { font: 800 30px/1 'Barlow Condensed', 'Arial Narrow', sans-serif; text-transform: uppercase; letter-spacing: .01em; color: var(--adag-cream); }
+  .adag-title b { color: var(--adag-gold-hi); font-weight: 800; }
+  .adag-sub { font-size: 15px; line-height: 1.45; color: var(--adag-sand); }
+  .adag-btn { box-sizing: border-box; display: inline-flex; align-items: center; gap: 8px; flex: none; min-height: 48px; padding: 0 20px; border-radius: 10px;
+    background: linear-gradient(180deg, #ebcb6a, #c9a227); color: #1a1408; font-weight: 700; font-size: 16px; white-space: nowrap; }
+  @media (max-width: 520px) { .adag-btn { width: 100%; justify-content: center; } .adag-title { font-size: 27px; } }
+  @media (prefers-reduced-motion: reduce) { .adag-card { transition: none; } .adag-card:hover { transform: none; } }
+</style>
+<a class="adag-card" href="URL_DE_ADA_GRUPAL" target="_blank" rel="noopener">
+  <span class="adag-txt">
+    <span class="adag-eyebrow">Clase grupal · jueves 19 hs</span>
+    <span class="adag-title">Dejá tu pregunta para la <b>próxima clase</b></span>
+    <span class="adag-sub">Las leemos antes de la clase y las ordenamos por tema.</span>
+  </span>
+  <span class="adag-btn">Dejar mi pregunta <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+</a>
+<!-- ═══════════ ADA GRUPAL · TARJETA · copiar hasta acá ═══════════ -->
+</div>
+
+<div>
+<p>Variante 2 · solo botón (para una barra o un menú)</p>
+
+<!-- ═══════════ ADA GRUPAL · BOTÓN · copiar desde acá ═══════════ -->
+<style>
+  .adag-solo { box-sizing: border-box; max-width: 100%; display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 10px; text-decoration: none;
+    background: linear-gradient(180deg, #ebcb6a, #c9a227); color: #1a1408; font: 700 16px/1 'Manrope', 'Helvetica Neue', Arial, sans-serif; white-space: nowrap;
+    transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 6px 24px rgba(201,162,39,.28); }
+  .adag-solo:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(201,162,39,.4); text-decoration: none; }
+  .adag-solo:focus-visible { outline: 2px solid #ebcb6a; outline-offset: 3px; }
+</style>
+<a class="adag-solo" href="URL_DE_ADA_GRUPAL" target="_blank" rel="noopener">Dejar mi pregunta para la clase <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<!-- ═══════════ ADA GRUPAL · BOTÓN · copiar hasta acá ═══════════ -->
+</div>
+</div>
+</body>
+</html>
